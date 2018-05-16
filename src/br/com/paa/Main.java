@@ -2,7 +2,6 @@ package br.com.paa;
 
 public class Main {
 	public static void main(String ... args) {
-		
 		Graph g1 = new Graph(9);
 		
 	    g1.addEdge(0, 1);
