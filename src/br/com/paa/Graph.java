@@ -29,7 +29,7 @@ public class Graph {
 	
 	
 	public void traversal() {
-		
+		int odd = 0;
 		for(int i=0; i < vertexList.length; i++) {
 			
 			int edges = vertexList[i].size();
@@ -40,13 +40,17 @@ public class Graph {
 			}
 			
 			if(edges % 2 != 0) {
-				System.out.println("Is not Eulerian Cycle");
-				return;
+				odd++;
 			}
 		}
 		
-		
-		System.out.print("Eulerian Cycle:\n\n");
+		if(odd > 2) {
+			System.out.println("\n\nIs not Eulerian\n\n");
+		}else if(odd == 2) {
+			System.out.println("\n\nIs Eulerian path\n\n");
+		}else {
+			System.out.print("\n\nEulerian Cycle:\n\n");
+		}
 		eulerianCycle(0);
 		
 		System.out.print(circuit.get(circuit.size() -1) + "");
