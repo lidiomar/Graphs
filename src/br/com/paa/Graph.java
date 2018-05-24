@@ -18,7 +18,7 @@ public class Graph {
 		stack = new Stack<Integer>();
 		circuit = new ArrayList<Integer>();
 		
-		for(int i = 0; i < size; i ++) { // O(n) ??
+		for(int i = 0; i < size; i ++) { // O(n)
 			vertexList[i] = new LinkedList<Integer>(); // O(1)
 		}
 	}
@@ -55,9 +55,8 @@ public class Graph {
 			System.out.print(" -> "+circuit.get(i));
 		}
 	}
-	/*Complexidade O(n + v), 
-	onde n é o número de elementos e v é o número de vértices, sendo a complexidade de
-	O(n) */
+	/*Complexidade O(n), 
+	onde n é o número de vértices */
 	public void eulerianCycle(Integer currentVertex) {
 		
 		LinkedList<Integer> edges = vertexList[currentVertex];
