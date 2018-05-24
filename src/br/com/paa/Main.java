@@ -37,7 +37,7 @@ public class Main {
 	    g1.addEdge(8, 0);
 	    g1.addEdge(8, 5);
 	    
-	    //g1.traversal();
+	    g1.traversal();
 	    
 	    Graph g2 = new Graph(9);
 		
@@ -112,7 +112,7 @@ public class Main {
 	    g3.addEdge(8, 0);
 	    g3.addEdge(8, 5);
 	    
-	    //g3.traversal3();
+	    g3.traversal3();
        
 	}
 }

@@ -43,7 +43,7 @@ public class Graph {
 			}
 		}
 		
-		System.out.println("Eulerian Cycle:\n\n");
+		System.out.println("Eulerian Cycle Stack O(n):\n\n");
 		eulerianCycle(0);
 		
 		System.out.print(circuit.get(circuit.size() -1) + "");
@@ -96,7 +96,7 @@ public class Graph {
 			}
 		}
 		
-		System.out.println("\n\nEulerian Cycle:\n\n");
+		System.out.println("\n\nEulerian Cycle Ordem Decrescente O(n):\n\n");
 		eulerianCycle2(0);
 		
 		System.out.print(circuit.get(0) + "");
@@ -137,7 +137,7 @@ public class Graph {
 			}
 		}
 		
-		System.out.println("\n\nEulerian Cycle:\n\n");
+		System.out.println("\n\nEulerian Cycle lista Desordenada O(nLogN):\n\n");
 		eulerianCycle3(0);
 		
 		System.out.print(circuit.get(0) + "");
