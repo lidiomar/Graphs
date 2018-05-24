@@ -63,14 +63,14 @@ public class Graph {
 		Iterator<Integer> iterator = edges.listIterator();
 		
 		if(iterator.hasNext()) {
-			stack.push(currentVertex);
+			stack.push(currentVertex); //O(1)
 			Integer nextVertex = iterator.next();
 			edges.remove(nextVertex);
 			vertexList[nextVertex].remove(currentVertex);
 			
 			eulerianCycle(nextVertex);
 		}else if(!stack.isEmpty()){
-			Integer vertexFromStack = stack.pop();
+			Integer vertexFromStack = stack.pop(); //O(1)
 			circuit.add(currentVertex);
 			
 			if(!stack.isEmpty()) {
